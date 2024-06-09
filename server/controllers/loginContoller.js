@@ -34,8 +34,7 @@ const loginController = async (req, res) => {
         maxAge: 1000 * 60 * 60,
         httpOnly: true,
         secure: true,
-        sameSite: false,
-      
+        sameSite: 'None',
       });
       console.log('Login Successffull');
       return res.status(200).json({
