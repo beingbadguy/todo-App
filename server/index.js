@@ -5,8 +5,8 @@ import dbConnect from './config/database.js';
 import bodyParser from 'body-parser';
 import router from './routes/route.js';
 import cookieParser from 'cookie-parser';
-import multer from 'multer';
-import path from 'path';
+// import multer from 'multer';
+// import path from 'path';
 import cors from 'cors';
 
 // middlewares ka kaam yha pr
@@ -25,35 +25,35 @@ app.use(
 app.use('/v1', router);
 // Set up storage for uploaded files
 
-const storage = multer.diskStorage({
-  destination: (req, res, cb) => {
-    cb(null, 'uploads');
-  },
-  filename: (req, file, cb) => {
-    cb(null, Date.now() + path.extname(file.originalname));
-  },
-});
+// const storage = multer.diskStorage({
+//   destination: (req, res, cb) => {
+//     cb(null, 'uploads');
+//   },
+//   filename: (req, file, cb) => {
+//     cb(null, Date.now() + path.extname(file.originalname));
+//   },
+// });
 
 // Initialize multer middleware
 
-const upload = multer({ storage: storage });
+// const upload = multer({ storage: storage });
 
 // Handle file upload route
 
-app.post('/upload', upload.single('file'), (req, res) => {
-  if (!req.file) {
-    return res.status(400).json({
-      success: false,
-      message: ' No file uploaded',
-    });
-  }
-  const fileUrl = req.file.path;
-  return res.status(200).json({
-    success: true,
-    message: 'File uploaded successfully',
-    NewPath: fileUrl,
-  });
-});
+// app.post('/upload', upload.single('file'), (req, res) => {
+//   if (!req.file) {
+//     return res.status(400).json({
+//       success: false,
+//       message: ' No file uploaded',
+//     });
+//   }
+//   const fileUrl = req.file.path;
+//   return res.status(200).json({
+//     success: true,
+//     message: 'File uploaded successfully',
+//     NewPath: fileUrl,
+//   });
+// });
 // app.post('/upload', upload.single('file'), (req, res) => {
 //   if (!req.file) {
 //     return res.status(400).json({ message: 'No file uploaded' });
