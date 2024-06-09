@@ -5,7 +5,7 @@ const App = () => {
   return (
     <div className='h-[100vh] bg-white flex flex-col items-center '>
       <div>
-        <img src='../public/front-page.png' alt='' />
+        <img src='/front-page.png' alt='' />
       </div>
       <div className='text-center flex flex-col items-center w-[100%]'>
         <h1 className='font-bold text-4xl'>Task Management & To-Do List</h1>
@@ -14,7 +14,7 @@ const App = () => {
           conveniently!
         </p>
       </div>
-      <div className='flex flex-col w-[90%] text-center gap-4 absolute bottom-0 mb-20' >
+      <div className='flex flex-col w-[90%] text-center gap-4 absolute bottom-0 mb-20'>
         <h1
           onClick={() => {
             navigate('/login');

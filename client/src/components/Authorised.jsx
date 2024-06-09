@@ -65,7 +65,7 @@ const Authorised = () => {
     <div className='text-2xl bg-white text-black'>
       <div className='flex items-center justify-between'>
         <div className='flex items-center'>
-          <img src='../../public/avatar.png' alt=' ' className='h-[120px] rounded-xl' />
+          <img src='/avatar.png' alt=' ' className='h-[120px] rounded-xl' />
           <div>
             <p>Hello!</p>
             <p>{Userdata && Userdata?.name}</p>
@@ -95,7 +95,7 @@ const Authorised = () => {
                 className={`text-black font-bold h-auto bg-purple-100  m-10 p-10 w-[90%] flex  gap-9 items-center relative rounded-xl`}
                 key={index}
               >
-                <img src='../../public/todo.png' alt='' className='h-[100px]' />
+                <img src='/todo.png' alt='' className='h-[100px]' />
                 <div>
                   <h1 className='text-[25px]'>{item.title}</h1>
                   <h1>{item.description}</h1>

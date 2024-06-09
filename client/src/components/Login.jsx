@@ -45,7 +45,7 @@ const Login = () => {
   };
 
   return (
-    <div className='bg-black h-[100vh] bg-[url("../../public/balloon.jpg")] bg-cover flex items-center justify-center '>
+    <div className='bg-black h-[100vh] bg-[url("/balloon.jpg")] bg-cover flex items-center justify-center '>
       <div
         className='absolute top-0 left-0 text-3xl text-white font-bold p-10'
         onClick={() => {
