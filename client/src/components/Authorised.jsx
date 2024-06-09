@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Logout from './Logout';
 import Create from './Create';
-import { MdDelete } from 'react-icons/md';
+// import { MdDelete } from 'react-icons/md';
 const Authorised = () => {
   const [status, setStatus] = useState(false);
   const [Userdata, setUserData] = useState();
@@ -106,7 +106,7 @@ const Authorised = () => {
                     deleteHandler(item?._id);
                   }}
                 >
-                  <MdDelete />
+                 X
                 </div>
               </div>
             );
