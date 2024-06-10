@@ -96,11 +96,11 @@ const Authorised = () => {
                 key={index}
               >
                 <div>
-                  <h1 className='text-[14px] font-bold '>{item.title}</h1>
+                  <h1 className='text-[15px] font-bold '>{item.title}</h1>
                  <h1 classname='text-[12px]' >{item.description}</h1>
                 </div>
                 <div
-                  className='absolute right-10 cursor-pointer'
+                  className='absolute right-5 top-5 cursor-pointer'
                   onClick={() => {
                     deleteHandler(item?._id);
                   }}
