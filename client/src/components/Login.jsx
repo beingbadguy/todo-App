@@ -84,7 +84,7 @@ const Login = () => {
             Login
           </button>
         </form>
-        <p className='text-xl my-4'>Already have an account?</p>
+        <p className='text-xl my-4'>Don't have an account ?</p>
         <Button name='Sign Up' path='/sign' />
       </div>
     </div>
