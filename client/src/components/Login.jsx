@@ -47,7 +47,7 @@ const Login = () => {
   return (
     <div className='bg-black h-[100vh] bg-[url("/balloon.jpg")] bg-cover flex items-center justify-center '>
       <div
-        className='absolute top-0 left-0 text-3xl text-white font-bold p-10'
+        className='absolute top-0 left-0 text-xl text-white font-bold p-10'
         onClick={() => {
           navigate('/');
         }}
@@ -55,7 +55,7 @@ const Login = () => {
         Home
       </div>
       <div className='flex flex-col w-[90%] items-center bg-white text-black p-10'>
-        <h1 className='text-center text-4xl font-bold  my-4'>Log In</h1>
+        <h1 className='text-center text-2xl font-bold  my-4'>Log In</h1>
         <div>{message && <p className='text-red-500'>{message}</p>}</div>
         <form
           onSubmit={submitHandle}
@@ -81,7 +81,7 @@ const Login = () => {
           />
 
           <button className='bg-green-200 p-4 ' type='submit'>
-            Create new account
+            Login
           </button>
         </form>
         <p className='text-xl my-4'>Already have an account?</p>
