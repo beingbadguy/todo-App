@@ -96,8 +96,8 @@ const Authorised = () => {
                 key={index}
               >
                 <div>
-                  <h1 className='text-[25px]'>{item.title}</h1>
-                  <h1>{item.description}</h1>
+                  <h1 className='text-[14px] font-bold '>{item.title}</h1>
+                 <h1 classname='text-[12px]' >{item.description}</h1>
                 </div>
                 <div
                   className='absolute right-10 cursor-pointer'
